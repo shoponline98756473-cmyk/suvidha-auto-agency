@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M/s Suvidha Auto Agency | Trusted Auto Partner in Jaunpur</title>
+<meta name="description" content="M/s Suvidha Auto Agency - GST registered auto dealer offering auto sales, servicing, spare parts and accessories in Jaunpur, Uttar Pradesh. Proprietor: Atul Mishra.">
+<style>
+  :root {
+    --navy: #0a2540;
+    --navy-dark: #061a30;
+    --navy-light: #123a63;
+    --orange: #f5820d;
+    --orange-dark: #d96e00;
+    --white: #ffffff;
+    --off-white: #f7f9fc;
+    --gray: #5a6b7b;
+    --border: #e1e7ee;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #232b33;
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  img { max-width: 100%; }
+
+  a { text-decoration: none; color: inherit; }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  header {
+    background: var(--navy);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    width: 46px;
+    height: 46px;
+    background: var(--orange);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--navy-dark);
+    flex-shrink: 0;
+  }
+
+  .brand-text h1 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .brand-text p {
+    font-size: 12px;
+    color: #c9d6e3;
+    font-weight: 400;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  nav a:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero .gst-badge {
+    display: inline-block;
+    background: rgba(245, 130, 13, 0.15);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 22px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    font-weight: 800;
+    max-width: 780px;
+    margin: 0 auto 18px;
+    line-height: 1.25;
+  }
+
+  .hero h2 span { color: var(--orange); }
+
+  .hero p.sub {
+    font-size: 17px;
+    color: #d6e0ea;
+    max-width: 600px;
+    margin: 0 auto 34px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--navy-dark);
+  }
+
+  .btn-primary:hover {
+    background: var(--orange-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(245,130,13,0.35);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid var(--white);
+  }
+
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+  }
+
+  /* Sections */
+  section {
+    padding: 70px 20px;
+  }
+
+  .section-alt {
+    background: var(--off-white);
+  }
+
+  .section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px;
+  }
+
+  .section-head .eyebrow {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .section-head h2 {
+    font-size: 32px;
+    color: var(--navy);
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+
+  .section-head p {
+    color: var(--gray);
+    font-size: 16px;
+  }
+
+  /* About */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .about-text h3 {
+    color: var(--navy);
+    font-size: 26px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .about-text p {
+    color: var(--gray);
+    margin-bottom: 16px;
+    font-size: 15.5px;
+  }
+
+  .about-facts {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 26px;
+  }
+
+  .about-facts ul { list-style: none; }
+
+  .about-facts li {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14.5px;
+    gap: 10px;
+  }
+
+  .about-facts li:last-child { border-bottom: none; }
+
+  .about-facts .label {
+    color: var(--gray);
+    font-weight: 600;
+  }
+
+  .about-facts .value {
+    color: var(--navy);
+    font-weight: 700;
+    text-align: right;
+  }
+
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px 22px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(10,37,64,0.1);
+    border-color: var(--orange);
+  }
+
+  .service-icon {
+    width: 58px;
+    height: 58px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-size: 26px;
+    color: var(--orange);
+  }
+
+  .service-card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .service-card p {
+    color: var(--gray);
+    font-size: 14px;
+  }
+
+  /* Contact */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 36px;
+  }
+
+  .contact-card h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  .contact-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+
+  .contact-item .ic {
+    width: 40px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy-dark);
+    font-weight: 700;
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .contact-item .txt-label {
+    font-size: 12px;
+    color: #b9c8d8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+
+  .contact-item .txt-val {
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .contact-form {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+  }
+
+  .contact-form h3 {
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 22px;
+    font-weight: 700;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-family: inherit;
+    background: var(--white);
+    color: #232b33;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+  }
+
+  .contact-form .btn-primary {
+    width: 100%;
+    border: none;
+  }
+
+  /* Map placeholder */
+  .map-box {
+    margin-top: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .map-box iframe {
+    width: 100%;
+    height: 320px;
+    border: 0;
+    display: block;
+  }
+
+  /* Privacy Policy */
+  .policy-content {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .policy-content h3 {
+    color: var(--navy);
+    font-size: 19px;
+    margin: 26px 0 10px;
+    font-weight: 700;
+  }
+
+  .policy-content h3:first-child { margin-top: 0; }
+
+  .policy-content p, .policy-content li {
+    color: var(--gray);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .policy-content ul {
+    margin-left: 22px;
+    margin-bottom: 14px;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--navy-dark);
+    color: #c9d6e3;
+    padding: 44px 20px 26px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 36px;
+    max-width: 1140px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-grid h4 {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .footer-grid p {
+    font-size: 13.5px;
+    color: #9fb0c2;
+    line-height: 1.7;
+  }
+
+  .footer-grid ul { list-style: none; }
+
+  .footer-grid ul li { margin-bottom: 10px; }
+
+  .footer-grid ul a {
+    font-size: 13.5px;
+    color: #9fb0c2;
+    transition: color 0.2s;
+  }
+
+  .footer-grid ul a:hover { color: var(--orange); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 22px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+    color: #8195a8;
+  }
+
+  .footer-bottom .gst-tag {
+    color: var(--orange);
+    font-weight: 600;
+  }
+
+  /* Mobile nav toggle (CSS-only) */
+  .nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    color: var(--white);
+    line-height: 1;
+    padding: 4px 8px;
+  }
+
+  #nav-toggle { display: none; }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  @media (max-width: 720px) {
+    .nav-toggle-label { display: block; }
+
+    nav {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 0;
+      padding: 10px 0;
+    }
+
+    nav ul li { border-top: 1px solid rgba(255,255,255,0.12); }
+    nav ul li a { display: block; padding: 12px 4px; }
+
+    #nav-toggle:checked ~ nav {
+      max-height: 400px;
+    }
+
+    .header-inner { position: relative; }
+
+    .hero { padding: 56px 18px; }
+    .hero h2 { font-size: 28px; }
+    .hero p.sub { font-size: 15px; }
+
+    section { padding: 48px 18px; }
+    .section-head h2 { font-size: 26px; }
+
+    .services-grid { grid-template-columns: 1fr; }
+
+    .footer-bottom { flex-direction: column; text-align: center; }
+  }
+
+  @media (max-width: 420px) {
+    .brand-text h1 { font-size: 16px; }
+    .brand-text p { font-size: 10.5px; }
+    .hero h2 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner container">
+    <div class="brand">
+      <div class="brand-logo">SA</div>
+      <div class="brand-text">
+        <h1>M/s Suvidha Auto Agency</h1>
+        <p>Your Trusted Auto Partner in Jaunpur</p>
+      </div>
+    </div>
+
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <span class="gst-badge">GSTIN: 09FYWPM1764C1ZW</span>
+  <h2>Your Trusted Auto Partner in <span>Jaunpur</span></h2>
+  <p class="sub">M/s Suvidha Auto Agency is a GST registered automobile dealership serving Jaunpur and the surrounding region with genuine sales, servicing, spare parts and accessories.</p>
+  <div class="hero-buttons">
+    <a href="#services" class="btn btn-primary">Our Services</a>
+    <a href="#contact" class="btn btn-outline">Contact Us</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-head">
+    <span class="eyebrow">About Us</span>
+    <h2>Established Auto Agency, Built on Trust</h2>
+    <p>Proudly serving customers across Jaunpur, Uttar Pradesh with reliable automobile solutions.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <h3>Who We Are</h3>
+      <p>M/s Suvidha Auto Agency is a GST registered automobile dealership operated under sole proprietorship by <strong>Atul Mishra</strong>. As an established auto agency based in Jaunpur, Uttar Pradesh, we are committed to offering our customers dependable vehicle sales, professional servicing, genuine spare parts and quality auto accessories.</p>
+      <p>Our mission is simple &mdash; to be the most trusted name in the local automobile business by combining honest dealings, fair pricing and dependable after-sales support. Being a fully GST compliant business, we maintain transparency in every transaction with our customers.</p>
+      <p>Whether you are looking to purchase a vehicle, get your car or two-wheeler serviced, or simply need genuine spare parts and accessories, M/s Suvidha Auto Agency is your one-stop destination in Jaunpur.</p>
+    </div>
+
+    <div class="about-facts">
+      <ul>
+        <li><span class="label">Business Name</span><span class="value">M/s Suvidha Auto Agency</span></li>
+        <li><span class="label">Proprietor</span><span class="value">Atul Mishra</span></li>
+        <li><span class="label">Business Type</span><span class="value">Auto Agency / Automobile Dealer</span></li>
+        <li><span class="label">Registration Type</span><span class="value">Proprietorship</span></li>
+        <li><span class="label">GST Number</span><span class="value">09FYWPM1764C1ZW</span></li>
+        <li><span class="label">Location</span><span class="value">Jaunpur, Uttar Pradesh</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section-alt">
+  <div class="section-head">
+    <span class="eyebrow">What We Offer</span>
+    <h2>Our Services</h2>
+    <p>Complete automobile solutions under one roof, backed by trusted service.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">&#128663;</div>
+      <h3>Auto Sales</h3>
+      <p>Wide range of new and pre-owned vehicles with transparent pricing and honest guidance to help you choose the right vehicle.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#128295;</div>
+      <h3>Vehicle Servicing</h3>
+      <p>Complete periodic maintenance and repair services performed by experienced technicians to keep your vehicle running smoothly.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#9881;</div>
+      <h3>Spare Parts</h3>
+      <p>Genuine and reliable spare parts for all major vehicle makes and models, ensuring quality and durability.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#127942;</div>
+      <h3>Auto Accessories</h3>
+      <p>A wide selection of automobile accessories to enhance the comfort, style and functionality of your vehicle.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <span class="eyebrow">Get In Touch</span>
+    <h2>Contact Us</h2>
+    <p>Reach out to us for vehicle sales, servicing, spare parts or any auto related query.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Business Information</h3>
+
+      <div class="contact-item">
+        <div class="ic">&#128205;</div>
+        <div>
+          <div class="txt-label">Address</div>
+          <div class="txt-val">Sadar, Mohammadpur, Baksha, Jaunpur, Uttar Pradesh - 222109</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="ic">&#128222;</div>
+        <div>
+          <div class="txt-label">Phone</div>
+          <div class="txt-val">+91-XXXXXXXXXX</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="ic">&#9993;</div>
+        <div>
+          <div class="txt-label">Email</div>
+          <div class="txt-val">info@suvidha-auto-agency.shop</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="ic">&#128188;</div>
+        <div>
+          <div class="txt-label">Proprietor</div>
+          <div class="txt-val">Atul Mishra</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="ic">&#128196;</div>
+        <div>
+          <div class="txt-label">GST Number</div>
+          <div class="txt-val">09FYWPM1764C1ZW</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="privacy-policy" class="section-alt">
+  <div class="section-head">
+    <span class="eyebrow">Legal</span>
+    <h2>Privacy Policy</h2>
+    <p>Last updated: 2024</p>
+  </div>
+
+  <div class="policy-content">
+    <h3>Introduction</h3>
+    <p>M/s Suvidha Auto Agency ("we", "us", or "our") operates the website suvidha-auto-agency.shop. This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our website and services.</p>
+
+    <h3>Information We Collect</h3>
+    <p>We may collect the following types of information when you interact with our website or business:</p>
+    <ul>
+      <li>Personal identification information such as name, phone number, and email address submitted through our contact form.</li>
+      <li>Vehicle related information when you inquire about sales, servicing or spare parts.</li>
+      <li>Technical information such as browser type and device information collected automatically for website functioning.</li>
+    </ul>
+
+    <h3>How We Use Your Information</h3>
+    <p>The information we collect is used to:</p>
+    <ul>
+      <li>Respond to your inquiries regarding auto sales, servicing, spare parts, or accessories.</li>
+      <li>Improve our customer service and website experience.</li>
+      <li>Communicate important updates related to our products and services.</li>
+      <li>Comply with applicable legal and GST regulatory requirements.</li>
+    </ul>
+
+    <h3>Data Protection</h3>
+    <p>We take reasonable administrative and technical measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We do not sell or rent your personal information to third parties.</p>
+
+    <h3>Cookies</h3>
+    <p>Our website may use cookies to enhance user experience. You may choose to disable cookies through your browser settings; however, this may affect certain website functionalities.</p>
+
+    <h3>Third-Party Links</h3>
+    <p>Our website may contain links to third-party sites. We are not responsible for the privacy practices or content of such external websites.</p>
+
+    <h3>Your Consent</h3>
+    <p>By using our website, you consent to our privacy policy and agree to its terms.</p>
+
+    <h3>Changes to This Policy</h3>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with a revised update date.</p>
+
+    <h3>Contact Us</h3>
+    <p>If you have any questions about this Privacy Policy, please contact us at info@suvidha-auto-agency.shop or visit us at Sadar, Mohammadpur, Baksha, Jaunpur, Uttar Pradesh - 222109.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>M/s Suvidha Auto Agency</h4>
+      <p>A GST registered auto agency proprietorship led by Atul Mishra, offering trusted auto sales, servicing, spare parts and accessories in Jaunpur, Uttar Pradesh.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Sadar, Mohammadpur, Baksha,<br>Jaunpur, Uttar Pradesh - 222109</li>
+        <li>+91-XXXXXXXXXX</li>
+        <li>info@suvidha-auto-agency.shop</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2024 M/s Suvidha Auto Agency. All Rights Reserved.</span>
+    <span class="gst-tag">GST: 09FYWPM1764C1ZW</span>
+  </div>
+</footer>
+
+</body>
+</html>
